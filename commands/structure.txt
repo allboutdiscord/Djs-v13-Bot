@@ -1,0 +1,12 @@
+module.exports = {
+name: "Command name",
+description: "Description",
+category: "Category",
+usage: "Usage",
+cooldown: 5000,
+botPermissions: [""],
+authorPermissions: [""],
+ownerOnly: false,
+run: async(client, message, args) => {
+
+}}
