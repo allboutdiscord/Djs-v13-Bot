@@ -1,11 +1,14 @@
 const Discord = require("discord.js");
 const config = require("./config.json");
-const { Intents } = require("discord.js");
 const client = new Discord.Client({
+  fetchAllMembers: false,
+  allowedMentions: {
+    parse: ["roles", "users", "everyone"],
+    repliedUser: true,
+  },
+  partials: ["MESSAGE", "CHANNEL", "REACTION"],
   intents: [
-    Intents.FLAGS.GUILDS,
-    Intents.FLAGS.GUILD_MESSAGES,
-  ],
+    "GUILDS","GUILD_BANS", "GUILD_VOICE_STATES", "GUILD_MESSAGES", "GUILD_MESSAGE_REACTIONS"],
 });
       
 client.slashcommands = new Discord.Collection();
