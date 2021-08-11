@@ -16,3 +16,4 @@ module.exports = (client) => {
         }
     console.log(table.toString());
 }
+                                           )}
