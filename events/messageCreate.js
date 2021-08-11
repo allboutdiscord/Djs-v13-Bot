@@ -15,7 +15,7 @@ module.exports.run = async (client, message) => {
   const cmd = args.shift().toLowerCase();
   if (cmd.length === 0) return;
   let command = client.normalcommands.get(cmd);
-  if (!command) command = client.normalcommands.get(client.normalaliases.get(cmd));
+  if (!command) command = client.normalcommands.get(client.aliases.get(cmd));
   if (!command) return;
 //=== OWNER RESTRICTED COMMANDS ===    
   if (command.ownerOnly) {
