@@ -1,6 +1,6 @@
 const { readdirSync } = require("fs");
 const ascii = require("ascii-table");
-let table = new ascii("HARMONY COMMAND STATUS");
+let table = new ascii("COMMAND STATUS");
 table.setHeading("Command Name", "Command Status");
 module.exports = (client) => {
     readdirSync("./commands/").forEach(dir => {
