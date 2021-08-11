@@ -13,7 +13,7 @@ const client = new Discord.Client({
       
 client.slashcommands = new Discord.Collection();
 client.normalcommands = new Discord.Collection();
-client.normalaliases = new Discord.Collection();
+client.aliases = new Discord.Collection();
 ["command", "events", "slash"].forEach(handler => {
   require(`./handlers/${handler}`)(client);
 }); 
