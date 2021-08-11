@@ -2,7 +2,7 @@ const Discord = require("discord.js");
 
 module.exports = {
 name: "deploy",
-ownerOnly: true,
+ownerOnly: true, 
 run: async(client, message, args) => {
 const posted = new Discord.MessageEmbed()
 .setColor("#00FF00")
