@@ -15,7 +15,7 @@ module.exports = (client) => {
                 table.addRow(file, `❌  An Error Occured while Loading the Command`);
                 continue;
             }
-            if (pull.aliases && Array.isArray(pull.aliases)) pull.aliases.forEach(alias => client.normalaliases.set(alias, pull.name));
+            if (pull.aliases && Array.isArray(pull.aliases)) pull.aliases.forEach(alias => client.aliases.set(alias, pull.name));
         }
     });
     console.log(table.toString());
