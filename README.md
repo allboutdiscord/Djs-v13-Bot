@@ -13,8 +13,9 @@ The Following Things are present in this [Repository]():
 You can host this Project for yourself, or can take its Files. Please Make sure to give us Credits.
 1. Fork this Repository.
 2. Edit the **config.json** File.
-3. Install all the dependencies using **npm install**.
-4. Run the Project with **node index.js**
+3. Edit the **index.js** with all the [Intents](https://discord.com/developers/docs/topics/gateway) required for your Bot.
+4. Install all the dependencies using **npm install**.
+5. Run the Project with **node index.js**
 
 # Support
 You can join our [Discord Server](https://discord.gg/T63mpdBrzx) if you face any problem.
